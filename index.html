@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf8f6">
+  <meta name="description" content="Explore an eight-stage mathematics roadmap from number foundations to calculus and higher mathematics.">
+  <title>The Complete Math Roadmap | Math Recovery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23fbf8f6'/%3E%3Cpath d='M12 48h40' stroke='%23e4d7da' stroke-width='4' stroke-linecap='round'/%3E%3Crect x='14' y='34' width='7' height='13' rx='3' fill='%23d9a0af'/%3E%3Crect x='24' y='27' width='7' height='20' rx='3' fill='%23c04c68'/%3E%3Crect x='34' y='19' width='7' height='28' rx='3' fill='%23a91f42'/%3E%3Crect x='44' y='10' width='7' height='37' rx='3' fill='%239f1736'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#roadmap">Skip to the roadmap</a>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Math Recovery home">
+      <span class="brand-mark"><img src="math-recovery-logo.jpg" alt=""></span>
+      <span>Math Recovery</span>
+    </a>
+    <nav class="topnav" aria-label="Main navigation">
+      <a href="#roadmap">Roadmap</a>
+      <a href="#how-to-use">How it works</a>
+      <a class="nav-cta" href="#diagnostic">Find my stage</a>
+    </nav>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobileNav">Menu</button>
+  </header>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="#roadmap">Roadmap</a>
+    <a href="#how-to-use">How it works</a>
+    <a href="#diagnostic">Find my stage</a>
+  </nav>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">8 STAGES · FOUNDATIONS TO MASTERY</p>
+        <h1 id="hero-title">See how math <em>builds.</em></h1>
+        <p class="lead">A complete learning path from number sense to higher mathematics—organized by prerequisites, not school labels.</p>
+        <div class="hero-actions">
+          <a class="primary large" href="#roadmap">Explore the stages <span aria-hidden="true">↓</span></a>
+          <a class="secondary large" href="#diagnostic">Find my starting point</a>
+        </div>
+        <p class="microcopy">You do not need to restart everything. Use the roadmap to locate the earliest gap that affects what you are learning now.</p>
+      </div>
+      <aside class="map-preview" aria-label="Eight-stage roadmap preview">
+        <div class="preview-head">
+          <span>YOUR MATH MAP</span>
+          <b>01—08</b>
+        </div>
+        <div class="growth-map" aria-hidden="true">
+          <span style="--h:22%;--i:0"></span><span style="--h:31%;--i:1"></span><span style="--h:42%;--i:2"></span><span style="--h:54%;--i:3"></span><span style="--h:66%;--i:4"></span><span style="--h:77%;--i:5"></span><span style="--h:88%;--i:6"></span><span style="--h:100%;--i:7"></span>
+        </div>
+        <div class="preview-scale"><span>Foundations</span><span>Mastery</span></div>
+      </aside>
+    </section>
+
+    <section class="stage-strip" aria-label="Jump to a roadmap stage">
+      <div class="stage-strip-inner" id="stageJump"></div>
+    </section>
+
+    <section class="orientation" id="how-to-use" aria-labelledby="orientation-title">
+      <div class="section-intro">
+        <p class="eyebrow">READ THE MAP</p>
+        <h2 id="orientation-title">Progress is not always a straight line.</h2>
+      </div>
+      <div class="principles">
+        <article><b>01</b><h3>Start with prerequisites</h3><p>If equations feel difficult, the real blocker may be fractions, negative numbers, or the distributive property.</p></article>
+        <article><b>02</b><h3>Repair only what is weak</h3><p>A later-stage learner can revisit one earlier skill without repeating every topic before it.</p></article>
+        <article><b>03</b><h3>Mastery means transfer</h3><p>Move forward when you can explain, apply, and recognize an idea in an unfamiliar form—not only repeat a procedure.</p></article>
+      </div>
+    </section>
+
+    <section class="roadmap-section" id="roadmap" aria-labelledby="roadmap-title">
+      <div class="roadmap-heading">
+        <div>
+          <p class="eyebrow">THE COMPLETE ROADMAP</p>
+          <h2 id="roadmap-title">Eight stages of mathematical growth</h2>
+        </div>
+        <p>Select a stage to see its domains, topics, and mastery goal.</p>
+      </div>
+      <div class="roadmap-list" id="roadmapList"></div>
+    </section>
+
+    <section class="diagnostic-section" id="diagnostic" aria-labelledby="diagnostic-title">
+      <div class="diagnostic-copy">
+        <p class="eyebrow light">NOT SURE WHERE TO BEGIN?</p>
+        <h2 id="diagnostic-title">Find your actual starting point.</h2>
+        <p>The math diagnostic checks what you understand, what needs confirmation, and which prerequisite gaps may be affecting your current work.</p>
+        <ul>
+          <li>See your current working stage</li>
+          <li>Identify earlier gaps without restarting everything</li>
+          <li>Get an ordered path for what to learn next</li>
+        </ul>
+      </div>
+      <div class="diagnostic-action">
+        <span class="action-label">FREE ADAPTIVE CHECKUP</span>
+        <!-- Replace # below with your diagnostic URL. -->
+        <a class="button-on-accent" id="diagnosticLink" href="#">Take the math diagnostic <span aria-hidden="true">→</span></a>
+        <p id="linkNote">Add your diagnostic link to this button when it is ready.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#top">
+      <span class="brand-mark"><img src="math-recovery-logo.jpg" alt=""></span>
+      <span>Math Recovery</span>
+    </a>
+    <p>Evidence over labels. Progress over perfection.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
